@@ -84,11 +84,10 @@
         app:srcCompat="@android:drawable/sym_action_call" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
-        android:onClick="mudarTextoConhecimento"
         android:text="Conhecimento"
         android:textSize="10dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,7 +102,7 @@
         android:onClick="mudarTextoexperiencia"
         android:text="experiencia"
         android:textSize="10dp"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/button1"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
@@ -128,6 +127,6 @@
         android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
