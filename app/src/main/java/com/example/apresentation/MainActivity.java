@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
     public TextView apresentarTexto;
     private Button buttonExperience;
+    private Button buttonConhecimento;
+    private Button buttonQuemSou;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,30 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent = new Intent(getApplicationContext(), ExperienceActivity.class );
+
+                startActivity( intent );
+
+            }
+        });
+
+        buttonConhecimento = findViewById(R.id.button1);
+        buttonConhecimento.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), ConhecimentosActivity.class);
+
+                startActivity( intent );
+
+            }
+        });
+
+        buttonQuemSou = findViewById(R.id.button3);
+        buttonQuemSou.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), QuemSouActivity.class);
 
                 startActivity( intent );
 

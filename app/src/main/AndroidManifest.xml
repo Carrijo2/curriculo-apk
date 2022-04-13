@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Apresentation">
         <activity
+            android:name=".QuemSouActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConhecimentosActivity"
+            android:exported="false" />
+        <activity
             android:name=".ExperienceActivity"
             android:exported="false" />
         <activity
